@@ -18,17 +18,18 @@ body {
 
 .aside {
   grid-area: aside;
-  background-color: green;
+  background-color: rgba(26, 146, 212, 1);
+  color: white;
 }
 
 .top {
   grid-area: top;
-  background-color: blue;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .body {
   grid-area: body;
-  background-color: yellow;
+  background-color: rgba(226, 232, 240, 1);
 }
 
 dialog {

@@ -16,15 +16,43 @@ body {
     "aside body body body body";
 }
 
+svg {
+  height: 40px;
+  width: 40px;
+}
+
 .aside {
   grid-area: aside;
   background-color: rgba(26, 146, 212, 1);
   color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.svg-aside {
+  fill: white;
+  margin-inline: 15px;
+}
+
+.dashboard {
+  margin-bottom: 35px;
 }
 
 .top {
   grid-area: top;
   background-color: rgba(255, 255, 255, 1);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+}
+
+
+
+.search input {
+  width: 60%;
+  outline: grey;
+  border-radius: 6px;
 }
 
 .body {
@@ -32,10 +60,3 @@ body {
   background-color: rgba(226, 232, 240, 1);
 }
 
-dialog {
-  width: 300px;
-  height: 300px;
-  border-radius: 7px;
-  position: absolute;
-  margin: auto;
-}

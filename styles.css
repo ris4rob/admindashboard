@@ -145,13 +145,19 @@ ul li {
   border-radius: 6px;
   /* height: 95%; */
   width: 100%;
-  /* display: grid;
-  place-items: center; */
+  display: grid;
+  place-items: start;
   padding: 1rem;
+  align-items: center;
 }
 
 .project-card p {
   color: rgb(111 111 111);
+  font-size: .9rem;
+}
+
+.project-controls {
+  justify-self: end;
 }
 
 .announcements-wrapper {

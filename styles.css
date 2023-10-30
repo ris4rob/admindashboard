@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -36,6 +39,15 @@ svg {
 
 .dashboard {
   margin-bottom: 35px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+ul li {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  font-size: 1.2rem;
 }
 
 .top {
@@ -43,20 +55,129 @@ svg {
   background-color: rgba(255, 255, 255, 1);
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 30% 70%;
+  align-items: center;
+  margin-top: 1rem;
+  padding: .5rem;
+}
+
+.search-items{
+  display: grid;
+  grid-template-columns: 10% 80%;
   align-items: center;
 }
 
-
+.search svg {
+  height: 1.5rem;
+  /* padding-left: 1rem;
+  padding-right: .5rem; */
+}
 
 .search input {
-  width: 60%;
-  outline: grey;
-  border-radius: 6px;
+  width: 80%;
+  height: 1.5rem;
+  background-color: #e2e8f0;
+  border: none;
+  border-radius: 10px;
 }
+
 
 .body {
   grid-area: body;
   background-color: rgba(226, 232, 240, 1);
 }
 
+.profile-items {
+  display: grid;
+  grid-template-columns: 20% 20% 60%;
+  align-items: center;
+  justify-content: center;
+}
+
+.hello-user {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 1fr;
+  margin-left: 1rem;
+}
+
+.hello-user h1 span {
+  font-size: 1rem;
+}
+
+.hello-user h1 {
+  font-size: 1.2rem;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.controls button {
+  width: 5rem;
+  background-color: rgba(26, 146, 212, 1);
+  border: none;
+  color: #f4f4f4;
+  border-radius: 1rem;
+  padding-block: .4rem;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding-top: 2rem;
+  padding-inline: 1.2rem;
+  padding-bottom: 3rem;
+  gap: 2rem;
+}
+
+.project-card-wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1rem;
+  height: 100%;
+}
+
+.project-card {
+  border-left: 5px solid #f0b429;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+  /* display: grid;
+  place-items: center; */
+  padding: 1rem;
+}
+
+.project-card p {
+  color: rgb(111 111 111);
+}
+
+.announcements-wrapper {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-right: 2.5rem;
+}
+
+.announcement {
+  border-bottom: 2px solid rgb(111 111 111);
+}
+
+.announcement p {
+  color: rgb(111 111 111);
+}
+
+.trend-container {
+  
+}
+
+.trend-wrapper {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin-right: 2.5rem;
+}

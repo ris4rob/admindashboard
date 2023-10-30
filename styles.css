@@ -32,6 +32,10 @@ svg {
   grid-template-columns: 1fr;
 }
 
+.aside ul {
+  margin-top: 1rem;
+}
+
 .svg-aside {
   fill: white;
   margin-inline: 15px;
@@ -58,7 +62,9 @@ ul li {
   grid-template-rows: 30% 70%;
   align-items: center;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   padding: .5rem;
+  gap: 1rem;
 }
 
 .search-items{
@@ -96,7 +102,7 @@ ul li {
 
 .hello-user {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 10% 90%;
   grid-template-rows: 1fr;
   margin-left: 1rem;
 }
@@ -168,7 +174,12 @@ ul li {
 }
 
 .announcement {
-  border-bottom: 2px solid rgb(178, 178, 178);
+  border-bottom: 1px solid rgb(178, 178, 178);
+  
+}
+
+.announcement:nth-child(3) {
+   border-bottom: none;
 }
 
 .announcement h5 {
@@ -201,6 +212,7 @@ ul li {
   padding-block: 6px;
   font-size: .8rem;
   align-items: center;
+  gap: .5rem;
 }
 
 .trend-item p {
@@ -210,6 +222,13 @@ ul li {
 
 .trend-item p span {
   color: black;
+}
+
+
+
+.trend-item svg {
+  height: 50px;
+  width: 50px;
 }
 
 .project-container h2, .annoucements-container h2 {
